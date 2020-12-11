@@ -1,0 +1,80 @@
+.nav-bar {
+    list-style-type: none;
+    max-width: 100%;
+    margin: 0 10% 0 10%;
+    padding: 0;
+    overflow: auto;
+    background-color: rgb(11, 10, 12);
+   
+}
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(245, 241, 39);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d8ec1e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#home-image{
+    margin: 0 10% 0 10%;
+    /* padding: 0 0 0 130px; */
+    height: 400px;
+    width: 1005px;
+    /* margin: 10%; */
+    width: auto\9; /* ie8 */
+    
+    
+}
+
+#contact{
+    float: right;
+
+}
+
+#contact:hover{
+    background-color:rgb(245, 241, 39) ;
+}
+
+#img-logo{
+    
+    padding: 0;
+    margin: 0 10% 0 10%;
+    height: 200px;
+    width: 1005px;
+}
