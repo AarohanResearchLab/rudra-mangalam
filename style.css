@@ -3,6 +3,12 @@ body{
     padding: 0;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .nav-bar {
     list-style-type: none;
     /* max-width: 100%; */
@@ -10,7 +16,7 @@ body{
     padding: 0;
     /* border-radius: 5px; */
     overflow: auto;
-    background-color: rgb(11, 10, 12);
+    background-color:black;
     /* position: fixed;  */
     top: 0; 
     width: 100%; 
@@ -27,6 +33,7 @@ li a, .dropbtn {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+   
 }
   
 li a:hover, .dropdown:hover .dropbtn {
@@ -67,13 +74,10 @@ li.dropdown {
     width: 1005px;
     /* margin: 10%; */
     width: auto\9; /* ie8 */
-    
-    
 }
 
 #contact{
     float: right;
-
 }
 
 #contact:hover{
@@ -83,9 +87,14 @@ li.dropdown {
 #img-logo{
     
     padding: 0;
-    margin: 0 10% 0 10%;
-    height: 200px;
-    width: 1005px;
+    margin: 0 ;
+    height: 100px;
+    width: 300px;
+    
+}
+
+#logo-div{
+    /* background-color: black; */
 }
 
 
@@ -96,7 +105,7 @@ li.dropdown {
     /* border-radius: 5px; */
     /* display: inline; */
     color: yellow;
-    position: fixed;
+    /* position: fixed; */
     margin: 0;
     padding: 0;
     bottom: 0;

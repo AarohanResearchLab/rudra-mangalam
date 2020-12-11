@@ -9,9 +9,13 @@
 
 </head>
 <body>
+    <div id="logo-div">
+      <img id="img-logo" src="./assets/logo_hd.png" alt="">
+    </div>
     <nav>
-        <!-- <img id="img-logo" src="./assets/logo.png" alt=""> -->
-        <ul class="nav-bar">
+        <!-- <img id="home-image" src="./assets/home_image.jpg" alt=""> -->
+
+        <ul class="nav-bar" id="navbar">
             <li><a href="#home">HOME</a></li>
             <li><a href="#news">NEWS</a></li>
             <li class="dropdown">
@@ -43,17 +47,33 @@
             </li>
           </ul>
           
+          
           <img id="home-image" src="./assets/home_image.jpg" alt="">
-
-          <!-- <img id="home-image" src="./assets/home_image.jpg" alt="">
           <img id="home-image" src="./assets/home_image.jpg" alt="">
-          <img id="home-image" src="./assets/home_image.jpg" alt=""> -->
+          <img id="home-image" src="./assets/home_image.jpg" alt="">
     </nav>
 
 
 
-    <bottom class="bottom-menu">
+    <div class="bottom-menu">
       <p> contact us </p>
-    </bottom>
+    </div>
+
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
 </body>
 </html>
