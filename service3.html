@@ -7,10 +7,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 		
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap" rel="stylesheet" /><link rel="stylesheet" href="css/bootstrap.min.css" /><link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" /><link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="css/style.css" /><link rel="stylesheet" href="vendor/owl/owl.carousel.min.css" /><link rel="stylesheet" href="vendor/owl/assets/owl.theme.default.min.css" /><link rel="stylesheet" type="text/css" href="css/animate.css" /><link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" /><link rel="stylesheet" href="css/ekko-lightbox.css" />
-	
-	
+
 		<style>
+			.column:hover{
+				opacity: .8;
+			}
 		</style>
+	
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35408812-1"></script>
 		<script>
@@ -20,6 +23,8 @@
 	
 			gtag('config', 'UA-35408812-1');
 		</script>
+
+		
 	
 		<script src="./jquery.js" ></script>
 		
@@ -29,6 +34,8 @@
 				$("#footer").load("footer.html"); 
 			});
 		</script>
+
+		
 		<!--End-->
 	</head>
 	
@@ -53,7 +60,59 @@
 				<div class="product-header">
 					<div class="grey-shade-rect newbox"></div>
 					<div class="blue-shade-rect newbox"></div>
-					<h4 class="product-header-title d-inline-block"> Service Name 3</h4>
+					<h4 class="product-header-title d-inline-block"> Horticulture </h4>
+
+					<!-- The grid: four columns -->
+					<div class="row" style="">
+						<div class="column"  style="float: left; width: 25%; padding: 10px; " >
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/00c9b3c8-ad6f-49ab-afbd-be123e369b8b.jpg" alt="img1" onclick="myFunction(this);">
+						</div>
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/1fd2beaa-a6ae-44ad-8faf-61a07df1e6a4.jpg" alt="img2" onclick="myFunction(this);">
+						</div>
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/0d3f8896-f14b-46fc-adf4-77139df2027b.jpg" alt="img3" onclick="myFunction(this);">
+						</div>
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/2ca981a7-1a48-449a-a994-27eb627ef595.jpg" alt="img4" onclick="myFunction(this);">
+						</div>
+					</div>
+
+					<script>
+						function myFunction(imgs) {
+							// Get the expanded image
+							var expandImg = document.getElementById("expandedImg");
+							// Get the image text
+							var imgText = document.getElementById("imgtext");
+							// Use the same src in the expanded image as the image being clicked on from the grid
+							expandImg.src = imgs.src;
+							// Use the value of the alt attribute of the clickable image as text inside the expanded image
+							imgText.innerHTML = imgs.alt;
+							// Show the container element (hidden with CSS)
+							expandImg.parentElement.style.display = "block";
+						}
+					</script>
+					
+					<!-- The expanding image container -->
+					<div class="container" style="position: relative; width: 900px; padding: 10px;">
+						<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn" style="position: absolute; top: 10px; right: 15px; color: white; font-size: 35px; cursor: pointer;">&times;</span>
+					
+						<!-- Expanded image -->
+						<img id="expandedImg" src="./Upload/Services/00c9b3c8-ad6f-49ab-afbd-be123e369b8b.jpg" style=" width: 850px;  border: black solid;">
+					
+						<!-- Image text -->
+						<div id="imgtext" style="position: absolute; bottom: 15px; left: 15px; color: white; font-size: 20px;"></div>
+					</div>
+					
+
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					
+
+
 					<div class="description text-justify">
 						<p>We, Smith Structures India Pvt Ltd, are committed to the success of our business, the design, production and supply of pre-engineered/structural steel buildings and cladding.</p>
 						<p>To realize our vision and mission we shall exert every effort to achieve the following in all our activities: Gaining the confidence and trust of our supervising bodies, employees, stakeholders, customers, and the public through strict adherence to all applicable laws, regulations, best practices, Quality Standard (ISO 9001 : 2015)</p>
@@ -74,8 +133,6 @@
         <div id="footer"></div>
 		<!---Footer Ends--->
 		
-
-
 		
 </body>
 </html>

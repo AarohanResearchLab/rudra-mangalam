@@ -9,7 +9,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap" rel="stylesheet" /><link rel="stylesheet" href="css/bootstrap.min.css" /><link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" /><link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="css/style.css" /><link rel="stylesheet" href="vendor/owl/owl.carousel.min.css" /><link rel="stylesheet" href="vendor/owl/assets/owl.theme.default.min.css" /><link rel="stylesheet" type="text/css" href="css/animate.css" /><link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" /><link rel="stylesheet" href="css/ekko-lightbox.css" />
 
 		<style>
-			
+			.column:hover{
+				opacity: .8;
+			}
 		</style>
 	
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -58,38 +60,56 @@
 				<div class="product-header">
 					<div class="grey-shade-rect newbox"></div>
 					<div class="blue-shade-rect newbox"></div>
-					<h4 class="product-header-title d-inline-block"> Service Name 1</h4>
+					<h4 class="product-header-title d-inline-block"> Building Construction</h4>
 
 					<!-- The grid: four columns -->
-					<div class="row">
-						<div class="column" >
-						<img src="./Upload/Services/00c9b3c8-ad6f-49ab-afbd-be123e369b8b.jpg" alt="img1" onclick="myFunction(this);">
+					<div class="row" style="">
+						<div class="column"  style="float: left; width: 25%; padding: 10px; " >
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/00c9b3c8-ad6f-49ab-afbd-be123e369b8b.jpg" alt="img1" onclick="myFunction(this);">
 						</div>
-						<div class="column">
-						<img src="./Upload/Services/1fd2beaa-a6ae-44ad-8faf-61a07df1e6a4.jpg" alt="img2" onclick="myFunction(this);">
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/1fd2beaa-a6ae-44ad-8faf-61a07df1e6a4.jpg" alt="img2" onclick="myFunction(this);">
 						</div>
-						<div class="column">
-						<img src="./Upload/Services/0d3f8896-f14b-46fc-adf4-77139df2027b.jpg" alt="img3" onclick="myFunction(this);">
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/0d3f8896-f14b-46fc-adf4-77139df2027b.jpg" alt="img3" onclick="myFunction(this);">
 						</div>
-						<div class="column">
-						<img src="./Upload/Services/2ca981a7-1a48-449a-a994-27eb627ef595.jpg" alt="img4" onclick="myFunction(this);">
+						<div class="column"  style="float: left; width: 25%; padding: 10px;">
+						<img style="opacity: 0.8;cursor: pointer; height:200px; width:200px" src="./Upload/Services/2ca981a7-1a48-449a-a994-27eb627ef595.jpg" alt="img4" onclick="myFunction(this);">
 						</div>
 					</div>
+
+					<script>
+						function myFunction(imgs) {
+							// Get the expanded image
+							var expandImg = document.getElementById("expandedImg");
+							// Get the image text
+							var imgText = document.getElementById("imgtext");
+							// Use the same src in the expanded image as the image being clicked on from the grid
+							expandImg.src = imgs.src;
+							// Use the value of the alt attribute of the clickable image as text inside the expanded image
+							imgText.innerHTML = imgs.alt;
+							// Show the container element (hidden with CSS)
+							expandImg.parentElement.style.display = "block";
+						}
+					</script>
 					
 					<!-- The expanding image container -->
-					<div class="container">
+					<div class="container" style="position: relative; width: 900px; padding: 10px;">
 						<!-- Close the image -->
-						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						<span onclick="this.parentElement.style.display='none'" class="closebtn" style="position: absolute; top: 10px; right: 15px; color: white; font-size: 35px; cursor: pointer;">&times;</span>
 					
 						<!-- Expanded image -->
-						<img id="expandedImg" style="width:100%">
+						<img id="expandedImg" src="./Upload/Services/00c9b3c8-ad6f-49ab-afbd-be123e369b8b.jpg" style=" width: 850px;  border: black solid;">
 					
 						<!-- Image text -->
-						<div id="imgtext"></div>
+						<div id="imgtext" style="position: absolute; bottom: 15px; left: 15px; color: white; font-size: 20px;"></div>
 					</div>
 					
 
-
+					<br/>
+					<br/>
+					<br/>
+					<br/>
 					
 
 
@@ -113,8 +133,6 @@
         <div id="footer"></div>
 		<!---Footer Ends--->
 		
-
-
 		
 </body>
 </html>
