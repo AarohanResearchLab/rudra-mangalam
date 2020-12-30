@@ -106,9 +106,10 @@ textarea{
     position: absolute;
     left:0;
     width:56%;
-    height: 45px;
+    height: 40px;
 	/* background: #a9a393; */
 	background:  #DFAF37;
+	
 	
 	/* -webkit-transform: perspective(300px) rotateX(-15deg); */
     -webkit-transform-origin: right center;
@@ -117,7 +118,9 @@ textarea{
 }
 .top-header:after {
 	content:"";
-    position: absolute;
+	position: absolute;
+	
+	
     right:0;
     width: 0%;
     height: 0;

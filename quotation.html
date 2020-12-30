@@ -13,7 +13,8 @@
 				opacity: .8;
 			}
 		</style>
-	
+
+		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35408812-1"></script>
 		<script>
@@ -35,7 +36,76 @@
 			});
 		</script>
 
-		
+		<style>
+			/* body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.bg-img {
+  /* The image used */
+  /* background-image: url("/images/contact_form/contact.jpg"); */
+  /* min-height: 500px; */
+  /* width: 1000px;
+  height: 500px; */
+  /* min-height: 380px; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* position: relative; */
+}
+
+/* Add styles to the form container */
+.container {
+	
+  /* position:absolute; */
+  /* right: 0; */
+  /* margin: 20%; */
+  /* max-width: 300px;
+  padding: 16px;
+  background-color: white; */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  display: inline-block;
+  background-color: #ddd;
+  padding: 5px;
+  /* margin: 5px 0 22px 0; */
+  border: none;
+  
+} 
+
+ input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  background-color: #f1f1f1;
+  
+}
+
+
+/* Set a style for the submit button */
+/* .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+.btn:hover {
+  opacity: 1;
+
+}
+</style>
+	
 		<!--End-->
 	</head>
 	
@@ -47,41 +117,63 @@
 
 		<!----About Company Section---->
 	
+	<!-- <br/>
+	<br/>
+	<br/>		 -->
+	<!-- form here -->
+	<!-- <br/>
 	<br/>
 	<br/>
-	<br/>		
-	<div style="margin: 0 30% 0 30%; align-items: center;">
-		<!-- https://smartforms.dev/forms send form to this site and redirect forms to your site -->
-		<form action="" method="POST">
-			<p style="font-weight: bold ; display: inline; ">Name <span style="color: red;"> * </span> </p> 
-			<p style="font-weight: bold ; display: inline; float: right;"> Email </p>
-			<br/>
-			<br/>
-			<input type="text" placeholder="name" name="name" required style=" width: 350; height: 40px; ;">
-			
-			<input type="email" placeholder="email" name="email" style=" width: 200px; height: 40px; display: inline; float: right; padding-right: 0; margin-right: 0;">
-			<br/>
-			<br/>
-			
-			<p style="font-weight: bold ;">Phone: <span style="color: red;"> * </span> </p> <input type="tel" placeholder="9876543210"  name="phone"  maxlength="10" required style=" width: 500px; height: 40px; ">
-			<br/>
-			<br/>
-			
-			<p style="font-weight: bold ;">Description/Message:</p><input type="text" name="description" style=" width: 500px; height: 100px">
-			<br/>
-			<br/>
-			
-			<p></p>
-			<input type="submit" value="Submit Request" style="background-color: red; font-weight: bolder; width: 500px; height: 40px;">
-    	</form>
-	</div>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+	<br/> -->
 					
 
-
+	<div class="bg-img" style="background-image: url(./images/contact_form/contact.jpg);   background-repeat: no-repeat; background-size: cover;">
+		<div class="container">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		<form action="" method="POST" style="background-color: white; width: 50%; border-radius: 5px;">
+			
+			<br/>
+		  	<h1 style="width: 300px ;margin: auto; font-size: 40px;">Quotation Form</h1>
+		  	<div style="width: 300px; margin: auto;">
+				<label  for="name"><b>Name</b></label>
+				<input style="border-radius: 5px;"  type="text" placeholder="enter name" name="name" required>
+	  		</div>
+			<!-- <br/> -->
+			<div style="width: 300px; margin: auto;">
+				<label for="phone"><b>Phone</b></label>
+				<input style="border-radius: 5px;" type="text" placeholder="enter phone number" name="phone" required>
+			</div>
+			<!-- <br/> -->
+			<div style="width: 300px; margin: auto;" >
+				<label for="email"><b>Email</b></label>
+				<input style="border-radius: 5px;" type="text" placeholder="enter email" name="email" >
+			</div>
+			<!-- <br/>	 -->
+			<div style="width: 300px; margin: auto;">
+				<label for="description"><b>Description</b></label>
+				<textarea placeholder="enter description" style="  border-radius: 5px; background-color: #ddd; border: thin;" name="description" id="" cols="34" rows="3"></textarea>
+				
+			</div>
+			<br/>
+			<div style="width: 300px; margin: auto; ">
+				<button type="submit" class="btn" style="  background-color: #4379dd; border-radius: 5px; color: white; padding: 16px 20px; border: none; cursor: pointer; width: 300px; opacity: 0.9;">Login</button>
+			</div>
+			
+			<br/>
+			<br/> 
+		</form>
+		<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+	</div>
+	  </div>
 					
 
 		<!---Footer Starts--->
