@@ -131,7 +131,7 @@
         
     </div>
     
-    <div class="icon-bar">
+    <div class="icon-bar social-bar" style="margin-left: 3%;">
         <a href="#" class="facebook"> <i class="fab fa-facebook"></i></a> 
         <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
         <a href="#" class="google"><i class="fab fa-google"></i></a> 
@@ -234,10 +234,14 @@
                     $('.menu-header').addClass('affix animated slideInDown');
                     $('.navbar-brand img').css('height', '50px');
                     $('.navbar-nav').css('margin-top', '0px');
+                    $('.social-bar').css('visibility' ,'visible');
+                
+                    
                 } else {
                     $('.menu-header').removeClass('affix animated slideInDown');
                     $('.navbar-brand img').css('height', 'auto');
                     $('.navbar-nav').css('margin-top', '40px');
+                    $('.social-bar').css('visibility' ,'hidden');
                 }
             });
             $(function () {
