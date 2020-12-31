@@ -174,10 +174,7 @@
 		margin: 0 0 15px;
 		font-size:13px;
 	}
-	.ssiplbox {
-		float: none;
-		margin:0 0 20px
-	}
+	
 	.about-img {
 		background-size: 100%;
 		background-position:inherit;
@@ -228,7 +225,7 @@
 		margin: 10px 0 15px;
 		font-size:19px
 	}
-	#SliderSSIPL ol{
+	#SliderRM ol{
 		margin:-34px;
 	}
 	.marsm10{
@@ -240,10 +237,7 @@
 	.social-content img {
 		margin-right: 0px;
 	}
-	.ssiplimg img{
-		margin:25px;
-		float:none!important
-	}
+	
 	.ripples {
 		display: inline-block;
 	}

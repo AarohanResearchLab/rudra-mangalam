@@ -235,18 +235,18 @@ textarea{
 /*------Fixed Logo CSS-------*/ 
 
 /*------Slider CSS-------*/ 
-#SliderSSIPL img {
+#SliderRM img {
 	width: 100%;
 	height: 100%;
 }
-#SliderSSIPL .carousel-caption {
+#SliderRM .carousel-caption {
     background:rgb(255,255,255,0.7);
 	bottom: 50px;
 	right: 0;
     left:30%;
 	width:40%
 }
-#SliderSSIPL .carousel-indicators li {
+#SliderRM .carousel-indicators li {
     background-color:rgb(169,163,147,1);
     opacity: .75;
 	height:14px;
@@ -259,7 +259,7 @@ textarea{
 	-webkit-transition:1s;
 	border-radius:50%;
 }
-#SliderSSIPL .carousel-indicators li:hover {
+#SliderRM .carousel-indicators li:hover {
     background-color:#333;
     opacity:1;
 }
@@ -619,14 +619,7 @@ textarea{
 	letter-spacing:0;
 	text-transform:uppercase
 }
-.ssiplbox{
-	float:left;
-	background:#fff;
-	padding:10px;
-	border:2px solid #00a859;
-	border-radius:8px;
-	font-size:15px;
-}
+
 .mar-t-10{margin-top:10px}
 .mar-t-20{margin-top:20px}
 .mar-t-30{margin-top:30px}
@@ -910,16 +903,7 @@ textarea{
 .CsfForm .form-group{
 	margin:0.6rem 0 0;
 }
-/*-----SSIPL Builder Registration-----*/
-.ssipl-cb .product-header-title{
-	margin:0
-}
-.ssipl-cb small{
-	padding:0 40px
-}
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, .ui-widget {
-    font-family: 'Quicksand', sans-serif;
-}
+
 /*-----Projects-------*/
 .border-second{
 	border:1px solid rgb(169,163,147)
