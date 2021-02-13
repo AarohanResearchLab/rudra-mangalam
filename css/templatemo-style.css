@@ -217,7 +217,7 @@ header {
   width: 100%;
   height: 140px;
   line-height: 100px;
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
   text-align: center;
 }
@@ -453,35 +453,35 @@ header {
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../images/banner-images/banner2.jpeg);
+  background-image: url(../images/banner-images/banner2_2.jpeg);
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: url(../images/banner-images/banner3.jpeg);
+  background-image: url(../images/banner-images/banner3_2.jpg);
 }
 
 .Modern-Slider .item-4 .image {
-  background-image: url(../images/banner-images/banner4.jpeg);
+  background-image: url(../images/banner-images/banner4_2.jpeg);
 }
 
 .Modern-Slider .item-5 .image {
-  background-image: url(../images/banner-images/banner5.jpg);
+  background-image: url(../images/banner-images/banner5_2.jpeg);
 }
 
 .Modern-Slider .item-6 .image {
-  background-image: url(../images/banner-images/banner6.jpg);
+  background-image: url(../images/banner-images/banner6_2.jpeg);
 }
 
 .Modern-Slider .item-7 .image {
-  background-image: url(../images/banner-images/banner7.jpeg);
+  background-image: url(../images/banner-images/banner7_2.jpeg);
 }
 
 .Modern-Slider .item-8 .image {
-  background-image: url(../images/banner-images/banner8.jpg);
+  background-image: url(../images/banner-images/banner8_2.jpeg);
 }
 
 .Modern-Slider .item-9 .image {
-  background-image: url(../images/banner-images/banner9.jpg);
+  background-image: url(../images/banner-images/banner9_2.jpg);
 }
 .Modern-Slider .item-10 .image {
   background-image: url(../images/banner-images/banner10.jpg);
@@ -685,6 +685,8 @@ header {
   overflow: hidden;
   margin-bottom: 30px;
 }
+
+
 
 #projects .masonry .item img:hover {
   opacity: 0.5;
